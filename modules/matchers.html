@@ -480,6 +480,48 @@ exception:</p>
 </table>
 </dd></dl>
 
+<dl class="function">
+<dt id="JsHamcrest.Matchers.equivalentMap">
+<tt class="descclassname">JsHamcrest.Matchers.</tt><tt class="descname">equivalentMap</tt><big>(</big><em>expected</em><big>)</big><a class="headerlink" href="#JsHamcrest.Matchers.equivalentMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>The actual value must be equivalent to <em>expected</em>. This works for maps
+with nested arrays and maps:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">firstMap</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;key&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;key2&quot;</span> <span class="o">:</span> <span class="s2">&quot;String&quot;</span><span class="p">};</span>
+<span class="kd">var</span> <span class="nx">equivMap</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;key&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;key2&quot;</span> <span class="o">:</span> <span class="s2">&quot;String&quot;</span><span class="p">};</span>
+
+<span class="nx">assertThat</span><span class="p">(</span><span class="nx">firstMap</span><span class="p">,</span> <span class="nx">equivalentMap</span><span class="p">(</span><span class="nx">equivMap</span><span class="p">));</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Instance of <a class="reference internal" href="jshamcrest.html#JsHamcrest.SimpleMatcher" title="JsHamcrest.SimpleMatcher"><tt class="xref py py-class docutils literal"><span class="pre">JsHamcrest.SimpleMatcher</span></tt></a>.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="JsHamcrest.Matchers.equivalentArray">
+<tt class="descclassname">JsHamcrest.Matchers.</tt><tt class="descname">equivalentArray</tt><big>(</big><em>expected</em><big>)</big><a class="headerlink" href="#JsHamcrest.Matchers.equivalentArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>The actual value must be equivalent to <em>expected</em>. This works for arrays
+with nested arrays and maps:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">firstArray</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;String&quot;</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">equivArray</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;String&quot;</span><span class="p">];</span>
+
+<span class="nx">assertThat</span><span class="p">(</span><span class="nx">firstArray</span><span class="p">,</span> <span class="nx">equivalentArray</span><span class="p">(</span><span class="nx">equivArray</span><span class="p">));</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Instance of <a class="reference internal" href="jshamcrest.html#JsHamcrest.SimpleMatcher" title="JsHamcrest.SimpleMatcher"><tt class="xref py py-class docutils literal"><span class="pre">JsHamcrest.SimpleMatcher</span></tt></a>.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 <div class="section" id="number-matchers">
 <h2>Number Matchers<a class="headerlink" href="#number-matchers" title="Permalink to this headline">¶</a></h2>
