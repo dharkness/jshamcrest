@@ -7,14 +7,14 @@ allowing “match” rules to be defined declaratively. Typical scenarios includ
 testing frameworks, mocking libraries, UI validation rules and object querying.
 
 This is an open source project licenced under the terms of the BSD License
-and sponsored by Destaquenet Technology Solutions, a brazilian software
+and sponsored by Destaquenet Technology Solutions, a Brazilian software
 development and consultancy startup.
 
 
 Documentation
 -------------
 
-To learn everything about JsHamcrest, take a look at the the complete
+To learn everything about JsHamcrest, take a look at the complete
 documentation at:
 
     http://danielfm.github.com/jshamcrest/
